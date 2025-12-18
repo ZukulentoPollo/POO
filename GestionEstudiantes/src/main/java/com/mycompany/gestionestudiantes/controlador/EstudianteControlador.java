@@ -33,7 +33,7 @@ public class EstudianteControlador {
     // CREAR - IMPORTANTE: retorna boolean
     public boolean crear(Estudiante e) {
         try {
-            // Usar _id (con guión bajo) no id
+            
             Document doc = new Document("_id", e.getId())
                 .append("nombre", e.getNombre())
                 .append("apellido", e.getApellido())
@@ -51,7 +51,7 @@ public class EstudianteControlador {
         }
     }
     
-    // ACTUALIZAR - retorna boolean
+    
     public boolean actualizar(Estudiante e) {
         try {
             Document filtro = new Document("_id", e.getId());
